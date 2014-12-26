@@ -1,0 +1,76 @@
+@import "bootstrap";
+
+@background-color: #EC4D68;
+
+@light-text-color: #FEF9FD;
+@dark-text-color: #464040;
+
+@light-button-color: #E4C7CC;
+@dark-button-color: #464040;
+
+body{
+    background: @background-color;
+    color: @light-text-color;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 26px;
+}
+
+.btn-dark, .btn-light{
+    .btn;
+    .btn-lg;
+    text-decoration: none;
+}
+
+.btn-dark{
+  .button-variant(@light-text-color; @dark-button-color; @dark-button-color);
+}
+
+.btn-light{
+  .button-variant(@dark-text-color; @light-button-color; @light-button-color);
+}
+
+strong.dark{
+    color: @dark-text-color;
+}
+
+header{
+    line-height: 57px;
+    height: 57px;
+    margin: 40px 0 20px 0;
+}
+
+header h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p{
+    text-align: justify;
+}
+
+.phone{
+    text-align: center;
+}
+
+.button-box{
+    margin-top: 15px;
+}
+
+.button-box a{
+    width: 150px;
+}
+
+footer{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+footer p, footer form{
+    text-align: center;
+}
