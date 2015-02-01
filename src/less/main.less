@@ -12,11 +12,11 @@ body{
     background: @background-color;
     color: @light-text-color;
     font-family: "Open Sans", Sans-serif;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .container-fluid{
-    max-width: 1500px;
+    max-width: 1000px;
 }
 
 .btn-dark, .btn-light{
@@ -66,15 +66,42 @@ p{
     margin-top: 15px;
 }
 
-.button-box a{
+.button-box button, .button-box a{
     width: 150px;
 }
 
 footer{
     margin-top: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 footer p, footer form{
     text-align: center;
+}
+
+.modal{
+    padding-top: 15%;
+    font-size: 18px;
+    color: @dark-text-color;
+
+    ol{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
+.modal-header{
+    color: @light-text-color;
+    background-color: @background-color;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    h4{
+        font-weight: bold;
+    }
 }
