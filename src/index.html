@@ -32,9 +32,9 @@
                     <a href="http://kana.jairtrejo.mx" class="btn-light">
                         <i class="fa fa-android"></i> Android
                     </a>
-                    <a href="http://kana.jairtrejo.mx" class="btn-light">
+                    <button class="btn-light" type="button" data-toggle="modal" data-target="#ios-modal">
                         <i class="fa fa-apple"></i> iOS
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -48,6 +48,29 @@
             </form>
         </div>
     </footer>
+
+    <div id="ios-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4>Install web app to your home screen</h4>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>In your mobile device, go to <a href="http://getkana.com/app">http://getkana.com/app</a></li>
+                        <li>
+                            Tap the <img src="images/share.png" alt="Share" /> button.
+                        </li>
+                        <li>Choose <strong>Add to home Screen</strong>.</li>
+                    </ol>
+                    <p>
+                        <strong>And enjoy!</strong> You can use the app even while offline.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- bower:js -->
     <!-- endinject -->
 </body>
