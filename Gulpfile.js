@@ -101,6 +101,7 @@ gulp.task("less", function(){
             html: glob.sync(config.paths.html.src),
             ignore: [/modal+/, /fade+/, /in+/]
         }))
+        .pipe(cssmin())
         .pipe(concat("main.min.css"))
         .pipe(sourcemaps.write("."))
         .pipe(gulp.dest(config.paths.css.dest))
