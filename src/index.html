@@ -29,9 +29,9 @@
             <div class="phone col-sm-5">
                 <img src="images/phone-screenshot.png" alt="Screenshot" />
                 <div class="button-box">
-                    <a href="http://kana.jairtrejo.mx" class="btn-light">
+                    <button class="btn-light" type="button" data-toggle="modal" data-target="#android-modal">
                         <i class="fa fa-android"></i> Android
-                    </a>
+                    </button>
                     <button class="btn-light" type="button" data-toggle="modal" data-target="#ios-modal">
                         <i class="fa fa-apple"></i> iOS
                     </button>
@@ -63,6 +63,29 @@
                             Tap the <img src="images/share.png" alt="Share" /> button.
                         </li>
                         <li>Choose <strong>Add to home Screen</strong>.</li>
+                    </ol>
+                    <p>
+                        <strong>And enjoy!</strong> You can use the app even while offline.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="android-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4>Install web app to your homescreen</h4>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>In your mobile device, go to <a href="http://getkana.com/app">http://getkana.com/app</a></li>
+                        <li>
+                            Tap the <img src="images/android-menu.png" alt="Menu" /> icon on the top right of the screen.
+                        </li>
+                        <li>Choose <strong>Add to homescreen</strong>.</li>
                     </ol>
                     <p>
                         <strong>And enjoy!</strong> You can use the app even while offline.
