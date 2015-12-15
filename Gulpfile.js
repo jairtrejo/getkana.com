@@ -99,7 +99,7 @@ gulp.task("less", function(){
         }))
         .pipe(uncss({
             html: glob.sync(config.paths.html.src),
-            ignore: [/modal+/, /fade+/, /in+/]
+            ignore: [/modal+/, /fade+/, /in+/, /hidden+/]
         }))
         .pipe(cssmin())
         .pipe(concat("main.min.css"))

@@ -40,12 +40,13 @@ strong.dark{
 header{
     line-height: 57px;
     height: 57px;
-    margin: 40px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 
 header h1{
     font-size: 40px;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 800;
 }
 
@@ -55,11 +56,15 @@ h2{
 }
 
 p{
-    text-align: justify;
+    text-align: left;
 }
 
 .phone{
     text-align: center;
+}
+
+.phone, .copy{
+    margin-top: 50px;
 }
 
 .button-box{
@@ -77,6 +82,12 @@ footer{
 
 footer p, footer form{
     text-align: center;
+}
+
+@media (max-width: @screen-sm-max){
+    footer .btn-dark{
+        width: 100%;
+    }
 }
 
 .modal{
