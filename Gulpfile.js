@@ -42,6 +42,10 @@ var config = {
         verbatim: {
             src: ["src/manifest.json", "src/favicon.png"],
             dest: "build"
+        },
+        app: {
+            src: ["node_modules/getkana/build/**/*.*"],
+            dest: "build/app"
         }
     }
 };
@@ -97,10 +101,10 @@ gulp.task("less", function(){
         .pipe(less({
             paths: ["bower_components/bootstrap/less"]
         }))
-        .pipe(uncss({
-            html: glob.sync(config.paths.html.src),
-            ignore: [/modal+/, /fade+/, /in+/, /hidden+/]
-        }))
+        //.pipe(uncss({
+            //html: glob.sync(config.paths.html.src),
+            //ignore: [/modal+/, /fade+/, /in+/, /hidden+/]
+        //}))
         .pipe(cssmin())
         .pipe(concat("main.min.css"))
         .pipe(sourcemaps.write("."))
@@ -112,6 +116,11 @@ gulp.task("less", function(){
 gulp.task("verbatim", function(){
     gulp.src(config.paths.verbatim.src)
         .pipe(gulp.dest(config.paths.verbatim.dest));
+});
+
+gulp.task("app", function(){
+    gulp.src(config.paths.app.src)
+        .pipe(gulp.dest(config.paths.app.dest));
 });
 
 gulp.task("browser-sync", function() {
